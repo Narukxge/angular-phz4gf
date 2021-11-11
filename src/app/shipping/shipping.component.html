@@ -1,0 +1,10 @@
+<h3>Shipping Prices</h3>
+
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async"> <!-- -->
+    <span>{{shipping.type}}</span>
+    <span>{{shipping.price | currency}}</span>
+</div>
+
+
+<!--Die asyncPipe gibt den neuesten Wert aus
+    einem Datenstrom zurück und tut dies für die gesamte Lebensdauer einer bestimmten Komponente.-->
